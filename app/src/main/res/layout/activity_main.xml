@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Appbarcolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fitsSystemWindows="true"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/Toolbarcolor"
+            app:title=" "
+             >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dashboard"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:fontFamily="monospace"
+
+                />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Welcome"
+        android:textColor="@color/SplashScreenColor"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="0.02"
+        app:layout_constraintHorizontal_bias="0.1"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:visibility="gone"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/emptylist" />
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/SplashScreenColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.899999"
+        app:layout_constraintVertical_bias="0.9"
+        app:cornerRadius="20dp"
+        android:text="+"
+        android:textSize="25dp"
+        app:rippleColor="@color/ripplecolor"
+        android:id="@+id/AddButtonMain"
+        android:outlineSpotShadowColor="@color/ButtonColor"
+        android:outlineAmbientShadowColor="@color/ButtonColor"
+
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

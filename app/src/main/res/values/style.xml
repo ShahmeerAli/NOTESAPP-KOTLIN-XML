@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Custom theme for TimePickerDialog -->
+    <style name="CustomTimePickerDialog" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Customize the title bar color -->
+        <item name="colorPrimary">@color/ButtonColor</item>
+        <!-- Customize the title text color -->
+        <item name="android:textColorPrimary">@color/ButtonColor</item>
+        <!-- Customize button text color -->
+        <item name="android:textColor">@color/TextColor</item>
+    </style>
+</resources>
+

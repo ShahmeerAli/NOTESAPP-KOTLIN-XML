@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="SplashScreenColor">#88E788</color>
+    <color name="Appbarcolor">#88E788</color>
+    <color name="Toolbarcolor">#88E788</color>
+    <color name="TextColor">#000000</color>
+    <color name="HeadingsColor">#FFFFFFFF</color>
+    <color name="cardviewcolor">#F3FFFFFF</color>
+    <color name="background">#FFFFFFFF</color>
+    <color name="ripplecolor">#0C5632</color>
+    <color name="ButtonColor">#88E788</color>
+    <color name="ArrowColor">#B9FAB9</color>
+</resources>

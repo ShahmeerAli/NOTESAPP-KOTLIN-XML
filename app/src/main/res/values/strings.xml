@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NotesApp</string>
+    <string name="Screen1Desc">"Keep forgetting things?"</string>
+    <string name="Screen2Desc">"Don't Worry we got your back"</string>
+</resources>

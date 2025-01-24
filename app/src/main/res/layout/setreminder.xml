@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+         android:gravity="start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        >
+
+        <EditText
+            android:id="@+id/TilteED"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/transparent"
+            android:hint="  Remind me too...."
+            android:inputType="textMultiLine"
+            android:maxLines="2"
+            android:maxLength="50"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/setBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/ButtonColor"
+            android:text="Select"
+            android:textSize="20sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="140dp"
+
+          />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ok_svgrepo_com"
+            android:layout_marginLeft="300dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/okbt"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskAdding"
+    >
+
+
+    <ImageView
+        android:id="@+id/reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toEndOf="@+id/backimage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        android:clickable="true"
+        android:focusable="true"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/backimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/back_svgrepo_com"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EdTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:inputType="textMultiLine"
+        android:hint="  Title"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"
+        android:background="@android:color/transparent"
+        android:textColor="@color/SplashScreenColor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backimage" />
+
+
+    <EditText
+        android:id="@+id/EdContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="  Start Typing..."
+        android:inputType="textMultiLine"
+        android:textColor="@color/TextColor"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EdTitle" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/SaveBt"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/ButtonColor"
+        android:outlineAmbientShadowColor="@color/ripplecolor"
+        android:outlineSpotShadowColor="@color/ripplecolor"
+        android:text="Save"
+        android:textSize="15sp"
+        app:cornerRadius="10dp"
+        app:elevation="10dp"
+        android:layout_marginLeft="150dp"
+        app:layout_constraintEnd_toStartOf="@+id/reminder"
+        app:layout_constraintStart_toEndOf="@+id/backimage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
